@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onBoardingFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.baseproject.fragment.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_quizzFragment"
+            app:destination="@id/quizzFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/congratFragment"
+        android:name="com.example.baseproject.fragment.CongratFragment"
+        android:label="fragment_congrat"
+        tools:layout="@layout/fragment_congrat" >
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/failureFragment"
+        android:name="com.example.baseproject.fragment.FailureFragment"
+        android:label="fragment_failure"
+        tools:layout="@layout/fragment_failure" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.baseproject.fragment.OnBoardingFragment"
+        android:label="fragment_on_boading"
+        tools:layout="@layout/fragment_on_boading" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzFragment"
+        android:name="com.example.baseproject.fragment.QuizzFragment"
+        android:label="fragment_quizz"
+        tools:layout="@layout/fragment_quizz" >
+        <action
+            android:id="@+id/toCongratFragment"
+            app:destination="@id/congratFragment" />
+        <action
+            android:id="@+id/action_quizzFragment_to_failureFragment"
+            app:destination="@id/failureFragment" />
+        <action
+            android:id="@+id/action_quizzFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

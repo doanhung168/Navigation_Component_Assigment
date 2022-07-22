@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Navigation Component</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">START</string>
+    <string name="wellcome_to_my_app">Wellcome To My App</string>
+    <string name="you_can_navigation_though_screens_easy_by_navigation_component">You can navigation though screens easy by Navigation component</string>
+    <string name="play">Play</string>
+    <string name="i_have_a_hard_question">Let take part in a little quiz</string>
+    <string name="is_this_a_question">Is this a question?</string>
+    <string name="_true">TRUE</string>
+    <string name="_false">FALSE</string>
+    <string name="try_again">TRY AGAIN!</string>
+    <string name="game_over">Game Over</string>
+    <string name="comeback_quizz">Comeback Quizz</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="score">Score: %1$d</string>
+    <string name="quizz">Quizz</string>
+    <string name="log_out">Log out</string>
+</resources>
